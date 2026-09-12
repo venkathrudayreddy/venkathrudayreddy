@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="ZYyTATO3I_iGW4aXIZR93ifbESw7lPE8ltCEbtB5e00" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="ZYyTATO3I_iGW4aXIZR93ifbESw7lPE8ltCEbtB5e00">
+
+  <!-- SEO -->
   <title>Nallamilli Venkat Hruday Reddy | Andhra Pradesh</title>
 
-  <meta name="description" content="Official website of Nallamilli Venkat Hruday Reddy. Learn about his journey, vision and public initiatives in Andhra Pradesh.">
+  <meta name="description" content="Official website of Nallamilli Venkat Hruday Reddy, a young aspiring political leader from Andhra Pradesh focused on youth development, education, employment, technology, healthcare and public service.">
+
+  <meta name="author" content="Nallamilli Venkat Hruday Reddy">
+
+  <link rel="canonical" href="https://venkathrudayreddy.vercel.app/">
+
+  <!-- Person / Profile structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Nallamilli Venkat Hruday Reddy - Official Website",
+    "url": "https://venkathrudayreddy.vercel.app/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Nallamilli Venkat Hruday Reddy",
+      "birthDate": "2007-05-04",
+      "description": "Young aspiring political leader and emerging public voice from Andhra Pradesh, focused on youth development, education, employment, technology, healthcare, women's safety and community development.",
+      "url": "https://venkathrudayreddy.vercel.app/",
+      "sameAs": [
+        "https://www.instagram.com/hruday_reddyy/"
+      ]
+    }
+  }
+  </script>
 
   <style>
     * {
@@ -16,28 +43,33 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: #172033;
       background: #f7f9fc;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      background: #ffffff;
-      padding: 20px 7%;
+      background: rgba(255,255,255,0.96);
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
       box-shadow: 0 2px 15px rgba(0,0,0,0.08);
     }
 
     .logo {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 800;
+      letter-spacing: 1px;
     }
 
     nav a {
@@ -47,16 +79,20 @@
       font-weight: 600;
     }
 
+    nav a:hover {
+      color: #1565c0;
+    }
+
     .hero {
-      min-height: 75vh;
+      min-height: 78vh;
       display: flex;
       align-items: center;
-      padding: 70px 7%;
+      padding: 80px 7%;
       background: linear-gradient(135deg, #eef5ff, #ffffff);
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 900px;
     }
 
     .tag {
@@ -74,9 +110,9 @@
     }
 
     .hero p {
-      font-size: 21px;
+      font-size: 20px;
       color: #536174;
-      max-width: 650px;
+      max-width: 720px;
       margin-bottom: 30px;
     }
 
@@ -89,6 +125,7 @@
       text-decoration: none;
       font-weight: bold;
       margin-right: 10px;
+      margin-bottom: 10px;
     }
 
     .button.secondary {
@@ -98,18 +135,24 @@
     }
 
     section {
-      padding: 70px 7%;
+      padding: 75px 7%;
     }
 
     .section-title {
       font-size: 38px;
-      margin-bottom: 15px;
+      line-height: 1.2;
+      margin-bottom: 18px;
     }
 
     .section-text {
-      max-width: 750px;
+      max-width: 850px;
       color: #596579;
       font-size: 18px;
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: #172033;
     }
 
     .cards {
@@ -144,11 +187,58 @@
       color: #c9d1df;
     }
 
+    .vision .card {
+      color: #172033;
+    }
+
+    .focus-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .focus-item {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .profile-box {
+      margin-top: 30px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+    }
+
+    .profile-box p {
+      margin-bottom: 10px;
+    }
+
+    .instagram {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 22px;
+      background: #1565c0;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
     footer {
       background: #0d1420;
       color: #aeb8c8;
       text-align: center;
       padding: 35px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
 
     @media (max-width: 700px) {
@@ -161,11 +251,19 @@
       }
 
       .hero {
-        padding: 60px 5%;
+        padding: 65px 5%;
       }
 
       section {
         padding: 55px 5%;
+      }
+
+      h1 {
+        font-size: clamp(40px, 13vw, 60px);
+      }
+
+      .hero p {
+        font-size: 18px;
       }
     }
   </style>
@@ -178,12 +276,14 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#journey">Journey</a>
     <a href="#vision">Vision</a>
     <a href="#initiatives">Initiatives</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
 
@@ -195,8 +295,10 @@
     </h1>
 
     <p>
-      Aspiring public leader focused on ideas, development,
-      opportunity and a stronger future for Andhra Pradesh.
+      A young aspiring political leader and emerging public voice
+      with a vision focused on youth development, education,
+      employment, technology, healthcare and the future of
+      Andhra Pradesh.
     </p>
 
     <a class="button" href="#vision">Explore My Vision</a>
@@ -205,23 +307,81 @@
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-  <h2 class="section-title">About</h2>
+
+  <h2 class="section-title">About Nallamilli Venkat Hruday Reddy</h2>
 
   <p class="section-text">
-    Welcome to the official website of Nallamilli Venkat Hruday Reddy.
-    This platform shares his journey, ideas, public interests and
-    vision for the future.
+    <span class="highlight">Nallamilli Venkat Hruday Reddy</span>
+    is a young aspiring political leader from Andhra Pradesh,
+    with roots in Anaparthi, East Godavari district, and a
+    connection to Visakhapatnam.
   </p>
+
+  <br>
+
+  <p class="section-text">
+    Born on 4 May 2007, he has developed an early interest in
+    public life, youth participation and the future of Andhra
+    Pradesh. His ambition is to enter politics at a young age
+    and build a journey centered on public service,
+    constructive leadership and opportunities for people.
+  </p>
+
+  <div class="profile-box">
+
+    <p><strong>Name:</strong> Nallamilli Venkat Hruday Reddy</p>
+
+    <p><strong>Date of Birth:</strong> 4 May 2007</p>
+
+    <p><strong>Native Place:</strong> Anaparthi, East Godavari District, Andhra Pradesh</p>
+
+    <p><strong>Associated City:</strong> Visakhapatnam, Andhra Pradesh</p>
+
+    <p><strong>Focus:</strong> Youth Development, Education, Employment, Technology, Healthcare and Public Service</p>
+
+  </div>
+
 </section>
 
-<section id="vision" class="vision">
-  <h2 class="section-title">A Vision for Andhra Pradesh</h2>
+<!-- POLITICAL JOURNEY -->
+<section id="journey">
+
+  <h2 class="section-title">Political Journey</h2>
 
   <p class="section-text">
-    A future built around opportunity, quality education,
-    employment, innovation, infrastructure and responsible
-    public leadership.
+    Venkat Hruday Reddy aspires to begin his political journey
+    at a young age, with a strong interest in youth participation
+    and public life.
+  </p>
+
+  <br>
+
+  <p class="section-text">
+    His focus is on encouraging young people to participate in
+    community activities, develop leadership qualities and
+    contribute positively to society.
+  </p>
+
+  <br>
+
+  <p class="section-text">
+    As his journey develops, this website will share his public
+    activities, initiatives, ideas and future work.
+  </p>
+
+</section>
+
+<!-- VISION -->
+<section id="vision" class="vision">
+
+  <h2 class="section-title">Vision for Andhra Pradesh</h2>
+
+  <p class="section-text">
+    A stronger, healthier and more prosperous Andhra Pradesh
+    built around opportunity, development and the active
+    participation of its people — especially its youth.
   </p>
 
   <div class="cards">
@@ -229,59 +389,201 @@
     <div class="card">
       <h3>Education</h3>
       <p>
-        Supporting better opportunities and modern education
-        for young people.
+        Promoting quality and modern education and creating
+        greater opportunities for students and young people.
       </p>
     </div>
 
     <div class="card">
-      <h3>Jobs & Opportunity</h3>
+      <h3>Jobs & Employment</h3>
       <p>
-        Encouraging entrepreneurship, skills and employment
-        opportunities for the next generation.
+        Supporting skills, employment opportunities,
+        entrepreneurship and economic opportunity.
       </p>
     </div>
 
     <div class="card">
-      <h3>Development</h3>
+      <h3>Technology</h3>
       <p>
-        Working toward stronger infrastructure and sustainable
-        development.
+        Encouraging innovation, technology and forward-thinking
+        development across Andhra Pradesh.
       </p>
     </div>
 
     <div class="card">
-      <h3>Innovation</h3>
+      <h3>Healthcare</h3>
       <p>
-        Promoting technology, innovation and forward-thinking
-        ideas for Andhra Pradesh.
+        Supporting better access to healthcare and
+        health-focused community initiatives.
       </p>
     </div>
 
   </div>
+
 </section>
 
-<section id="initiatives">
-  <h2 class="section-title">Public Initiatives</h2>
+<!-- PRIORITIES -->
+<section>
+
+  <h2 class="section-title">Areas of Focus</h2>
 
   <p class="section-text">
-    Updates about community activities, initiatives,
-    public discussions and future projects will appear here.
+    His long-term vision includes working toward a state where
+    people have greater opportunities to learn, work, innovate
+    and build a better future.
   </p>
+
+  <div class="focus-list">
+
+    <div class="focus-item">Youth Development</div>
+
+    <div class="focus-item">Education</div>
+
+    <div class="focus-item">Employment</div>
+
+    <div class="focus-item">Technology & Innovation</div>
+
+    <div class="focus-item">Healthcare</div>
+
+    <div class="focus-item">Women's Safety & Empowerment</div>
+
+    <div class="focus-item">Community Development</div>
+
+    <div class="focus-item">Sports & Culture</div>
+
+  </div>
+
 </section>
 
+<!-- INITIATIVES -->
+<section id="initiatives">
+
+  <h2 class="section-title">Future Public Initiatives</h2>
+
+  <p class="section-text">
+    Venkat Hruday Reddy aims to support initiatives that
+    encourage community participation and create meaningful
+    opportunities for people across Andhra Pradesh.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Youth Programs</h3>
+      <p>
+        Encouraging youth participation, leadership and
+        community engagement.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Community Activities</h3>
+      <p>
+        Supporting activities that bring communities together
+        and encourage public participation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Education Initiatives</h3>
+      <p>
+        Promoting educational opportunities and development
+        for students and young people.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Employment Initiatives</h3>
+      <p>
+        Supporting skills, employment awareness and
+        opportunities for young people.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Social Service</h3>
+      <p>
+        Encouraging service-oriented activities that can
+        support local communities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Health & Blood Donation</h3>
+      <p>
+        Supporting future health camps and blood-donation
+        initiatives for community benefit.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sports</h3>
+      <p>
+        Encouraging young people to participate in sports
+        and healthy activities.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Culture</h3>
+      <p>
+        Supporting cultural participation and activities
+        that bring people together.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FUTURE -->
+<section>
+
+  <h2 class="section-title">A Future for Andhra Pradesh</h2>
+
+  <p class="section-text">
+    The aspiration is to contribute to an Andhra Pradesh where
+    young people have the confidence and opportunity to learn,
+    work, innovate and lead; where women can live with safety
+    and dignity; where healthcare and education remain central
+    to development; and where technology and opportunity help
+    communities move forward.
+  </p>
+
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
+
   <h2 class="section-title">Connect</h2>
 
   <p class="section-text">
-    Follow future updates and public initiatives through
-    the official channels.
+    Follow future updates, public initiatives and activities
+    through the official social channel.
   </p>
+
+  <a
+    class="instagram"
+    href="https://www.instagram.com/hruday_reddyy/"
+    target="_blank"
+    rel="noopener noreferrer">
+    Follow on Instagram
+  </a>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 Nallamilli Venkat Hruday Reddy.
-  All rights reserved.
+
+  <p>
+    © 2026 Nallamilli Venkat Hruday Reddy.
+    All rights reserved.
+  </p>
+
+  <p>
+    Andhra Pradesh, India
+  </p>
+
 </footer>
 
 </body>
